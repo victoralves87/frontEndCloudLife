@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <!-- Basic -->
@@ -8,68 +8,251 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="inscrição, Cloudlife, paciente, médico, clínica" />
+  <meta name="description" content="Faça seu pré-cadastro na Cloudlife como paciente, médico ou clínica e junte-se à nossa plataforma de saúde digital." />
+  <meta name="author" content="Cloudlife Team" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Orthoc </title>
+  <title>Cloudlife - Cadastre-se</title>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
+  <!-- Fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
+  <!-- Owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-  <!-- font awesome style -->
+  <!-- Font Awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
+  <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="css/custom.css" rel="stylesheet" />
 
+  <!-- Estilos personalizados para a página de inscrições -->
+  <style>
+    :root {
+      --primary-color: #3498db;
+      --primary-hover: #2980b9;
+    }
+    .inscription_section {
+      background-color: #f5f6f5;
+      padding: 80px 0;
+    }
+    .inscription_section .img-box {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .inscription_section .img-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .inscription_section .heading_container h2 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .inscription_section .heading_container p.intro {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #555;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-style: italic;
+    }
+    .inscription_section .form_container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      max-width: 700px;
+      margin: 0 auto;
+      border-top: 4px solid var(--primary-color);
+    }
+    .inscription_section .form_container select,
+    .inscription_section .form_container input,
+    .inscription_section .form_container textarea {
+      width: 100%;
+      padding: 14px 18px;
+      margin-bottom: 25px;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: #2c3e50;
+      background-color: #fafafa;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .inscription_section .form_container select:focus,
+    .inscription_section .form_container input:focus,
+    .inscription_section .form_container textarea:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+      outline: none;
+    }
+    .inscription_section .form_container textarea {
+      height: 140px;
+      resize: none;
+    }
+    .inscription_section .form_container .alert {
+      background-color: #e9f7fe;
+      border-left: 4px solid var(--primary-color);
+      padding: 15px;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+      color: #2c3e50;
+      border-radius: 4px;
+    }
+    .inscription_section .form_container button {
+      background-color: var(--primary-color);
+      border: none;
+      padding: 14px 40px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      margin: 20px auto 0;
+    }
+    .inscription_section .form_container button:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      display: none;
+    }
+    .form-group.active {
+      display: block;
+    }
+    .error {
+      border-color: #e74c3c !important;
+    }
+    .success-message {
+      display: none;
+      text-align: center;
+      color: #27ae60;
+      font-weight: 500;
+      margin-top: 20px;
+    }
+
+    .he:root {
+      --primary-color: #3498db; /* Cor principal personalizável */
+      --primary-hover: #2980b9; /* Cor ao passar o mouse */
+    }
+
+    .hero_area {
+      position: relative;
+      background: url('../images/hero-bg.png') no-repeat center center/cover;
+    }
+
+    .header_section {
+      padding: 15px 0;
+    }
+
+    .header_section .navbar-brand span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff; /* Cor escura para o logotipo */
+    }
+
+    .header_section .navbar-nav .nav-link {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #502c2c; /* Cor escura padrão para legibilidade */
+      transition: color 0.3s ease, background-color 0.3s ease; /* Transição suave */
+    }
+
+    .header_section .navbar-nav .nav-item.active .nav-link {
+      color:hwb(167 1% 67%); /* Cor personalizável para o item ativo */
+      font-weight: 600; /* Leve destaque no ativo */
+    }
+
+    .header_section .navbar-nav .nav-link:hover {
+      color: #fff; /* Cor ao passar o mouse */
+      background-color: rgba(6, 112, 89, 0.2); /* Fundo leve ao passar o mouse */
+      border-radius: 4px; /* Bordas arredondadas no hover */
+    }
+
+    .nav_search-btn {
+      background-color: transparent;
+      border: none;
+      color: #098368; /* Cor escura para o ícone de busca */
+    }
+
+    .nav_search-btn:hover {
+      color:#fff; /* Cor ao passar o mouse */
+    }
+
+    .btn-primary {
+  background-color:#079b7b;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 1px auto 0;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+  </style>
 </head>
 
 <body class="sub_page">
-
   <div class="hero_area">
-    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.png" alt="">
+    </div>
+
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Orthoc
-            </span>
+            <span>Cloudlife</span>
           </a>
-
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html">Sobre Nós</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="departments.html">Departments</a>
+                <a class="nav-link" href="services.html">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctors.html">Doctors</a>
+                <a class="nav-link" href="doctors.html">Médicos</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
+                <a class="nav-link btn btn-primary text-white px-4 py-2" href="contact.html">Cadastre-se <span class="sr-only">(current)</span></a>
               </li>
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
@@ -81,55 +264,71 @@
     <!-- end header section -->
   </div>
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding">
+  <!-- inscription section -->
+  <section class="inscription_section layout_padding">
     <div class="container">
-      <div class="heading_container">
-        <h2>
-          Get In Touch
-        </h2>
+      <div class="img-box">
+        <img src="images/inscription-img.jpg" alt="Inscrições na Cloudlife">
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form_container contact-form">
-            <form action="">
-              <div class="form-row">
-                <div class="col-lg-6">
-                  <div>
-                    <input type="text" placeholder="Your Name" />
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div>
-                    <input type="text" placeholder="Phone Number" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
+      <div class="heading_container">
+        <h2>Faça seu <span>Cadastro</span></h2>
+        <p class="intro">Junte-se à Cloudlife e transforme a gestão da saúde. Escolha seu tipo de cadastro abaixo e preencha os dados solicitados.</p>
+      </div>
+      <div class="form_container">
+        <select id="userType" onchange="showForm()">
+          <option value="">Selecione o tipo de cadastro</option>
+          <option value="patient">Paciente</option>
+          <option value="doctor">Médico</option>
+          <option value="clinic">Clínica/Consultório</option>
+        </select>
+
+        <!-- Formulário para Paciente -->
+        <form id="patientForm" class="form-group" onsubmit="return validatePatientForm(event)">
+          <div class="alert">
+            <strong>Atenção:</strong> Este é um cadastro inicial. Após o envio, você receberá instruções para completar seu acesso.
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="map_container">
-            <div class="map">
-              <div id="googleMap"></div>
-            </div>
+          <input type="text" name="name" placeholder="Nome Completo" required />
+          <input type="email" name="email" placeholder="E-mail" required />
+          <input type="tel" name="phone" placeholder="Telefone (ex.: +55 81 98765-4321)" required />
+          <input type="text" name="cpf" placeholder="CPF (ex.: 123.456.789-00)" required />
+          <textarea name="message" placeholder="Mensagem (opcional)" rows="4"></textarea>
+          <button type="submit">Inscrever-se</button>
+          <p class="success-message">Cadastro enviado com sucesso!</p>
+        </form>
+
+        <!-- Formulário para Médico -->
+        <form id="doctorForm" class="form-group" onsubmit="return validateDoctorForm(event)">
+          <div class="alert">
+            <strong>Atenção:</strong> Este é um pré-cadastro. Seu CRM e informações serão verificados pela nossa equipe antes da aprovação.
           </div>
-        </div>
+          <input type="text" name="name" placeholder="Nome Completo" required />
+          <input type="email" name="email" placeholder="E-mail Profissional" required />
+          <input type="tel" name="phone" placeholder="Telefone (ex.: +55 81 98765-4321)" required />
+          <input type="text" name="crm" placeholder="CRM (ex.: CRM/PE 12345)" required />
+          <input type="text" name="specialty" placeholder="Especialidade" required />
+          <textarea name="description" placeholder="Breve Descrição Profissional" rows="4" required></textarea>
+          <button type="submit">Enviar Pré-cadastro</button>
+          <p class="success-message">Pré-cadastro enviado com sucesso! Aguarde validação.</p>
+        </form>
+
+        <!-- Formulário para Clínica/Consultório -->
+        <form id="clinicForm" class="form-group" onsubmit="return validateClinicForm(event)">
+          <div class="alert">
+            <strong>Atenção:</strong> Este é um pré-cadastro. Seu CNPJ e informações serão validados pela nossa equipe antes da aprovação.
+          </div>
+          <input type="text" name="name" placeholder="Nome da Clínica/Consultório" required />
+          <input type="email" name="email" placeholder="E-mail Oficial" required />
+          <input type="tel" name="phone" placeholder="Telefone (ex.: +55 81 98765-4321)" required />
+          <input type="text" name="cnpj" placeholder="CNPJ (ex.: 12.345.678/0001-99)" required />
+          <input type="text" name="address" placeholder="Endereço Completo" required />
+          <textarea name="description" placeholder="Descrição da Clínica/Consultório" rows="4" required></textarea>
+          <button type="submit">Enviar Pré-cadastro</button>
+          <p class="success-message">Pré-cadastro enviado com sucesso! Aguarde validação.</p>
+        </form>
       </div>
     </div>
   </section>
-  <!-- end contact section -->
+  <!-- end inscription section -->
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -137,120 +336,230 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_contact">
-            <h4>
-              Reach at..
-            </h4>
+            <h4>Contato</h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span>Recife, Pernambuco, Brasil</span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
+                <span>+55 81 1234-5678</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <span>contato@cloudlife.com.br</span>
               </a>
             </div>
           </div>
           <div class="footer_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_detail">
-            <h4>
-              About
-            </h4>
-            <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
-            </p>
+            <h4>Sobre a Cloudlife</h4>
+            <p>Soluções inovadoras para conectar médicos, pacientes e clínicas em uma plataforma de gestão de saúde digital.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto footer_col">
           <div class="footer_link_box">
-            <h4>
-              Links
-            </h4>
+            <h4>Links</h4>
             <div class="footer_links">
-              <a class="" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="" href="departments.html">
-                Departments
-              </a>
-              <a class="" href="doctors.html">
-                Doctors
-              </a>
-              <a class="active" href="contact.html">
-                Contact Us
-              </a>
+              <a href="index.html">Home</a>
+              <a href="about.html">Sobre Nós</a>
+              <a href="services.html">Serviços</a>
+              <a href="doctors.html">Médicos</a>
+              <a class="active" href="contact.html">Cadastre-se</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 footer_col ">
-          <h4>
-            Newsletter
-          </h4>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <h4>Newsletter</h4>
           <form action="#">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
+            <input type="email" placeholder="Seu email" />
+            <button type="submit">Inscrever-se</button>
           </form>
         </div>
       </div>
       <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
-        </p>
+        <p>© 2025 Cloudlife Tecnologia em Saúde. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
+  <!-- Popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
+  <!-- Owl Slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap" async defer></script>
 
+  <!-- JavaScript para alternar formulários e validação -->
+  <script>
+    function showForm() {
+      const userType = document.getElementById("userType").value;
+      const forms = document.querySelectorAll(".form-group");
+      
+      forms.forEach(form => {
+        form.classList.remove("active");
+        form.querySelector(".success-message").style.display = "none"; // Esconde mensagens de sucesso
+        form.querySelectorAll("input, textarea").forEach(input => input.classList.remove("error")); // Remove erros
+      });
+      
+      if (userType === "patient") {
+        document.getElementById("patientForm").classList.add("active");
+      } else if (userType === "doctor") {
+        document.getElementById("doctorForm").classList.add("active");
+      } else if (userType === "clinic") {
+        document.getElementById("clinicForm").classList.add("active");
+      }
+    }
+
+    function validatePatientForm(event) {
+      event.preventDefault();
+      const form = document.getElementById("patientForm");
+      const name = form.querySelector("input[name='name']");
+      const email = form.querySelector("input[name='email']");
+      const phone = form.querySelector("input[name='phone']");
+      const cpf = form.querySelector("input[name='cpf']");
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\+55\s\d{2}\s\d{5}-\d{4}$/;
+      const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+      let isValid = true;
+
+      [name, email, phone, cpf].forEach(input => input.classList.remove("error"));
+
+      if (name.value.length < 3) {
+        name.classList.add("error");
+        isValid = false;
+      }
+      if (!emailRegex.test(email.value)) {
+        email.classList.add("error");
+        isValid = false;
+      }
+      if (!phoneRegex.test(phone.value)) {
+        phone.classList.add("error");
+        isValid = false;
+      }
+      if (!cpfRegex.test(cpf.value)) {
+        cpf.classList.add("error");
+        isValid = false;
+      }
+
+      if (isValid) {
+        form.querySelector(".success-message").style.display = "block";
+        form.reset();
+      }
+      return isValid;
+    }
+
+    function validateDoctorForm(event) {
+      event.preventDefault();
+      const form = document.getElementById("doctorForm");
+      const name = form.querySelector("input[name='name']");
+      const email = form.querySelector("input[name='email']");
+      const phone = form.querySelector("input[name='phone']");
+      const crm = form.querySelector("input[name='crm']");
+      const specialty = form.querySelector("input[name='specialty']");
+      const description = form.querySelector("textarea[name='description']");
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\+55\s\d{2}\s\d{5}-\d{4}$/;
+      const crmRegex = /^CRM\/[A-Z]{2}\s\d{4,6}$/;
+      let isValid = true;
+
+      [name, email, phone, crm, specialty, description].forEach(input => input.classList.remove("error"));
+
+      if (name.value.length < 3) {
+        name.classList.add("error");
+        isValid = false;
+      }
+      if (!emailRegex.test(email.value)) {
+        email.classList.add("error");
+        isValid = false;
+      }
+      if (!phoneRegex.test(phone.value)) {
+        phone.classList.add("error");
+        isValid = false;
+      }
+      if (!crmRegex.test(crm.value)) {
+        crm.classList.add("error");
+        isValid = false;
+      }
+      if (specialty.value.length < 3) {
+        specialty.classList.add("error");
+        isValid = false;
+      }
+      if (description.value.length < 10) {
+        description.classList.add("error");
+        isValid = false;
+      }
+
+      if (isValid) {
+        form.querySelector(".success-message").style.display = "block";
+        form.reset();
+      }
+      return isValid;
+    }
+
+    function validateClinicForm(event) {
+      event.preventDefault();
+      const form = document.getElementById("clinicForm");
+      const name = form.querySelector("input[name='name']");
+      const email = form.querySelector("input[name='email']");
+      const phone = form.querySelector("input[name='phone']");
+      const cnpj = form.querySelector("input[name='cnpj']");
+      const address = form.querySelector("input[name='address']");
+      const description = form.querySelector("textarea[name='description']");
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const phoneRegex = /^\+55\s\d{2}\s\d{5}-\d{4}$/;
+      const cnpjRegex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
+      let isValid = true;
+
+      [name, email, phone, cnpj, address, description].forEach(input => input.classList.remove("error"));
+
+      if (name.value.length < 3) {
+        name.classList.add("error");
+        isValid = false;
+      }
+      if (!emailRegex.test(email.value)) {
+        email.classList.add("error");
+        isValid = false;
+      }
+      if (!phoneRegex.test(phone.value)) {
+        phone.classList.add("error");
+        isValid = false;
+      }
+      if (!cnpjRegex.test(cnpj.value)) {
+        cnpj.classList.add("error");
+        isValid = false;
+      }
+      if (address.value.length < 10) {
+        address.classList.add("error");
+        isValid = false;
+      }
+      if (description.value.length < 10) {
+        description.classList.add("error");
+        isValid = false;
+      }
+
+      if (isValid) {
+        form.querySelector(".success-message").style.display = "block";
+        form.reset();
+      }
+      return isValid;
+    }
+  </script>
 </body>
 
 </html>

@@ -304,7 +304,7 @@ a:focus {
   display: inline-block;
   padding: 10px 15px;
   background-color: #ffffff;
-  color: #62d2a2;
+  color: #055e37;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -904,4 +904,17 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
+/* ADICIONADOS POR GUSTAVO */
+
+.carousel-subtitle {
+  font-size: 1.5rem; /* Tamanho maior que o <p> */
+  font-weight: 400; /* Menos pesado que o <h1> */
+  margin: 10px 0; /* Espaçamento */
+  line-height: 1.4; /* Legibilidade */
+  color: #ffffff
+}
+
 /*# sourceMappingURL=style.css.map */
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <!-- Basic -->
@@ -8,73 +8,222 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="prontuário eletrônico, saúde digital, Cloudlife, serviços de saúde" />
+  <meta name="description" content="Conheça os serviços da Cloudlife: prontuários eletrônicos, gestão de clínicas, telemedicina e mais." />
+  <meta name="author" content="Cloudlife Team" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Orthoc </title>
+  <title>Cloudlife - Serviços</title>
 
-  <!-- bootstrap core css -->
+  <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
+  <!-- Fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
+  <!-- Owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-  <!-- font awesome style -->
+  <!-- Font Awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
+  <!-- Responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- Estilos personalizados para a página de serviços -->
+  <style>
+    :root {
+      --primary-color: #3498db; /* Cor principal personalizável - mude aqui! */
+      --primary-hover: #2980b9; /* Cor ao passar o mouse */
+    }
+    .services_section .img-box {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services_section .img-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .services_section .detail-box {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .services_section .detail-box h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #097a62;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .services_section .detail-box p.intro {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services_section .service-box {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: box-shadow 0.3s;
+    }
+    .services_section .service-box:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+    .services_section .service-box .img-box {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .services_section .service-box .img-box img {
+      width: 60px;
+      height: auto;
+    }
+    .services_section .service-box h5 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #34495e;
+      margin-bottom: 10px;
+    }
+    .services_section .service-box p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+    .services_section .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+      display: block;
+      margin: 30px auto 0;
+      width: fit-content;
+    }
+    .services_section .btn-primary:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
+    /* Ajustes para compatibilidade com style.css */
+        .he:root {
+      --primary-color: #3498db; /* Cor principal personalizável */
+      --primary-hover: #2980b9; /* Cor ao passar o mouse */
+    }
+
+    .hero_area {
+      position: relative;
+      background: url('../images/hero-bg.png') no-repeat center center/cover;
+    }
+
+    .header_section {
+      padding: 15px 0;
+    }
+
+    .header_section .navbar-brand span {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff; /* Cor escura para o logotipo */
+    }
+
+    .header_section .navbar-nav .nav-link {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #502c2c; /* Cor escura padrão para legibilidade */
+      transition: color 0.3s ease, background-color 0.3s ease; /* Transição suave */
+    }
+
+    .header_section .navbar-nav .nav-item.active .nav-link {
+      color:hwb(167 1% 67%); /* Cor personalizável para o item ativo */
+      font-weight: 600; /* Leve destaque no ativo */
+    }
+
+    .header_section .navbar-nav .nav-link:hover {
+      color: #fff; /* Cor ao passar o mouse */
+      background-color: rgba(6, 112, 89, 0.2); /* Fundo leve ao passar o mouse */
+      border-radius: 4px; /* Bordas arredondadas no hover */
+    }
+
+    .nav_search-btn {
+      background-color: transparent;
+      border: none;
+      color: #098368; /* Cor escura para o ícone de busca */
+    }
+
+    .nav_search-btn:hover {
+      color:#fff; /* Cor ao passar o mouse */
+    }
+    .footer_section {
+      background-color: #0b7979;
+      color: #fff;
+    }
+    .footer_section h4 {
+      color: #fff;
+    }
+    .btn-primary {
+  background-color:rgb(30, 156, 129);
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: -4px auto 0;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+  </style>
 </head>
 
 <body class="sub_page">
-
   <div class="hero_area">
-
     <div class="hero_bg_box">
       <img src="images/hero-bg.png" alt="">
     </div>
 
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Orthoc
-            </span>
+            <span>Cloudlife</span>
           </a>
-
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About</a>
+                <a class="nav-link" href="about.html">CloudLife</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="departments.html">Departments <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="services.html">Serviços <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctors.html">Doctors</a>
+                <a class="nav-link" href="doctors.html">Médicos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+              <li class="nav-item active">
+                <a class="nav-link btn btn-primary text-white px-4 py-2" href="contact.html">Cadastre-se <span class="sr-only">(current)</span></a>
               </li>
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
@@ -86,91 +235,81 @@
     <!-- end header section -->
   </div>
 
-  <!-- department section -->
+  <!-- services section -->
+  <section class="services_section layout_padding">
+    <div class="container">
+      <div class="img-box">
+        <img src="images/services-img.jpg" alt="Serviços da Cloudlife">
+      </div>
+      <div class="detail-box">
+        <h2>Nossos <span>Serviços</span></h2>
+        <p class="intro">A Cloudlife oferece soluções inovadoras para transformar a gestão da saúde, conectando médicos, pacientes e clínicas com tecnologia de ponta. Conheça nossos serviços:</p>
 
-  <section class="department_section layout_padding">
-    <div class="department_container">
-      <div class="container ">
-        <div class="heading_container heading_center">
-          <h2>
-            Our Departments
-          </h2>
-          <p>
-            Asperiores sunt consectetur impedit nulla molestiae delectus repellat laborum dolores doloremque accusantium
-          </p>
-        </div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Cardiology
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable page when looking at its layout.
-                </p>
-              </div>
-            </div>
+        <div class="service-box">
+          <div class="img-box">
+            <img src="images/s1.png" alt="Prontuário Digital">
           </div>
-          <div class="col-md-3">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Diagnosis
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable page when looking at its layout.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  Surgery
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable page when looking at its layout.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="box ">
-              <div class="img-box">
-                <img src="images/s4.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>
-                  First Aid
-                </h5>
-                <p>
-                  fact that a reader will be distracted by the readable page when looking at its layout.
-                </p>
-              </div>
-            </div>
+          <div class="detail-box">
+            <h5>Prontuário Digital Unificado</h5>
+            <p>Armazene e acesse históricos médicos em uma plataforma segura baseada em nuvem. Reduza a duplicação de exames, facilite o compartilhamento entre profissionais e garanta continuidade no atendimento com dados sempre disponíveis.</p>
           </div>
         </div>
-        <div class="btn-box">
-          <a href="">
-            View All
-          </a>
+
+        <div class="service-box">
+          <div class="img-box">
+            <img src="images/s2.png" alt="Marcação de Consultas">
+          </div>
+          <div class="detail-box">
+            <h5>Marcação de Consultas</h5>
+            <p>Agende consultas de forma simples e integrada, acessível a médicos e pacientes. Nossa interface intuitiva organiza agendas, evita conflitos e permite marcações online, otimizando o tempo de todos.</p>
+          </div>
         </div>
+
+        <div class="service-box">
+          <div class="img-box">
+            <img src="images/s3.png" alt="Gestão de Clínicas">
+          </div>
+          <div class="detail-box">
+            <h5>Gestão de Clínicas</h5>
+            <p>Controle operações com ferramentas avançadas para pacientes, agendamentos e finanças. Relatórios analíticos em tempo real ajudam a tomar decisões estratégicas e aumentar a eficiência administrativa.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="img-box">
+            <img src="images/s4.png" alt="Reputação e Avaliações">
+          </div>
+          <div class="detail-box">
+            <h5>Reputação e Avaliações</h5>
+            <p>Promova confiança com um sistema de avaliações onde pacientes classificam médicos e clínicas. Use o feedback para aprimorar serviços e ajudar novos usuários a escolherem com segurança.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="img-box">
+            <img src="images/s5.png" alt="Acesso para Pacientes">
+          </div>
+          <div class="detail-box">
+            <h5>Acesso para Pacientes</h5>
+            <p>Disponibilize um portal seguro para que pacientes gerenciem seus dados médicos, marquem consultas e se comuniquem com profissionais, incentivando o autocuidado e a proximidade com o provedor de saúde.</p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="img-box">
+            <img src="images/s6.png" alt="Telemedicina">
+          </div>
+          <div class="detail-box">
+            <h5>Integração com Telemedicina</h5>
+            <p>Amplie o atendimento com suporte a consultas virtuais integradas ao prontuário eletrônico. Ofereça cuidado remoto seguro e prático, alinhado às demandas atuais da saúde digital.</p>
+          </div>
+        </div>
+
+        <a href="contact.html" class="btn btn-primary">Saiba Mais</a>
       </div>
     </div>
   </section>
-
-  <!-- end department section -->
+  <!-- end services section -->
 
   <!-- footer section -->
   <footer class="footer_section">
@@ -178,120 +317,74 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_contact">
-            <h4>
-              Reach at..
-            </h4>
+            <h4>Contato</h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span>Recife, Pernambuco, Brasil</span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
+                <span>+55 81 1234-5678</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <span>contato@cloudlife.com.br</span>
               </a>
             </div>
           </div>
           <div class="footer_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_detail">
-            <h4>
-              About
-            </h4>
-            <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
-            </p>
+            <h4>Sobre a Cloudlife</h4>
+            <p>Soluções inovadoras para conectar médicos, pacientes e clínicas em uma plataforma de gestão de saúde digital.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto footer_col">
           <div class="footer_link_box">
-            <h4>
-              Links
-            </h4>
+            <h4>Links</h4>
             <div class="footer_links">
-              <a class="" href="index.html">
-                Home
-              </a>
-              <a class="" href="about.html">
-                About
-              </a>
-              <a class="active" href="departments.html">
-                Departments
-              </a>
-              <a class="" href="doctors.html">
-                Doctors
-              </a>
-              <a class="" href="contact.html">
-                Contact Us
-              </a>
+              <a href="index.html">Home</a>
+              <a href="about.html">Sobre Nós</a>
+              <a class="active" href="services.html">Serviços</a>
+              <a href="doctors.html">Médicos</a>
+              <a href="contact.html">Cadastre-se</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 footer_col ">
-          <h4>
-            Newsletter
-          </h4>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <h4>Agende nossa visita!</h4>
           <form action="#">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
+            <input type="email" placeholder="Seu email" />
+            <button type="submit">Inscrever-se</button>
           </form>
         </div>
       </div>
       <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
-        </p>
+        <p>© 2025 Cloudlife Tecnologia em Saúde. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
+  <!-- Popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
+  <!-- Owl Slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap" async defer></script>
 </body>
 
 </html>

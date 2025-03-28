@@ -39,8 +39,24 @@ $(".client_owl-carousel").owlCarousel({
 /** google_map js **/
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
+        center: new google.maps.LatLng(-8.05428, -34.8813), // Coordenadas de Recife
+        zoom: 12, // Zoom ajustado para mostrar a cidade
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+    // Marcadores para consultórios e clínicas conveniadas (exemplo)
+    var clinics = [
+        { lat: -8.0631, lng: -34.8712, title: "Clínica Boa Viagem Cloudlife" },
+        { lat: -8.0475, lng: -34.8956, title: "Consultório Dr. João - Centro" },
+        { lat: -8.0600, lng: -34.8850, title: "Clínica Piedade Saúde" }
+    ];
+
+    // Adiciona marcadores ao mapa
+    clinics.forEach(function(clinic) {
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(clinic.lat, clinic.lng),
+            map: map,
+            title: clinic.title
+        });
+    });
 }

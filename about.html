@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <!-- Basic -->
@@ -8,12 +8,12 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="prontuário eletrônico, saúde digital, Cloudlife, tecnologia na saúde" />
+  <meta name="description" content="Cloudlife: Soluções avançadas em prontuários eletrônicos e gestão de saúde para médicos, pacientes e clínicas." />
+  <meta name="author" content="Cloudlife Team" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
 
-  <title> Orthoc </title>
+  <title>Cloudlife - Sobre Nós</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -21,7 +21,7 @@
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
+  <!-- owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
@@ -32,44 +32,182 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- Estilos personalizados para um look profissional -->
+  <style>
+    :root {
+      --primary-color: #088d82; /* Cor principal personalizável - mude aqui! */
+      --primary-hover: #ffffff; /* Cor ao passar o mouse - ajuste conforme a principal */
+    }
+    .about_section .img-box {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .about_section .img-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .about_section .detail-box {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .about_section .detail-box h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .about_section .detail-box h4 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #34495e;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 5px;
+    }
+    .about_section .detail-box p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #555;
+    }
+    .about_section .detail-box ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .about_section .detail-box ul li {
+      font-size: 1rem;
+      margin-bottom: 15px;
+      color: #555;
+      position: relative;
+      padding-left: 25px;
+    }
+    .about_section .detail-box ul li i {
+      color: var(--primary-color);
+      position: absolute;
+      left: 0;
+      top: 5px;
+    }
+    .about_section .detail-box .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+      display: block;
+      margin: 30px auto 0;
+      width: fit-content;
+    }
+    .about_section .detail-box .btn-primary:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
+    .he:root {
+  --primary-color: #3498db; /* Cor principal personalizável */
+  --primary-hover: #2980b9; /* Cor ao passar o mouse */
+}
+
+.hero_area {
+  position: relative;
+  background: url('../images/hero-bg.png') no-repeat center center/cover;
+}
+
+.header_section {
+  padding: 15px 0;
+}
+
+.header_section .navbar-brand span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff; /* Cor escura para o logotipo */
+}
+
+.header_section .navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #502c2c; /* Cor escura padrão para legibilidade */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+.header_section .navbar-nav .nav-item.active .nav-link {
+  color:hwb(167 1% 67%); /* Cor personalizável para o item ativo */
+  font-weight: 600; /* Leve destaque no ativo */
+}
+
+.header_section .navbar-nav .nav-link:hover {
+  color: #fff; /* Cor ao passar o mouse */
+  background-color: rgba(6, 112, 89, 0.2); /* Fundo leve ao passar o mouse */
+  border-radius: 4px; /* Bordas arredondadas no hover */
+}
+
+.nav_search-btn {
+  background-color: transparent;
+  border: none;
+  color: #098368; /* Cor escura para o ícone de busca */
+}
+
+.nav_search-btn:hover {
+  color:#fff; /* Cor ao passar o mouse */
+}
+
+.btn-primary {
+  background-color:rgb(30, 156, 129);
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: -4px auto 0;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+  </style>
 </head>
 
 <body class="sub_page">
-
   <div class="hero_area">
-    <!-- header section strats -->
+    <!-- header section starts -->
     <header class="header_section">
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Orthoc
-            </span>
+            <span>Cloudlife</span>
           </a>
-
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="about.html"> About <span class="sr-only">(current)</span> </a>
+                <a class="nav-link" href="about.html">Cloudlife <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="departments.html">Departments</a>
+                <a class="nav-link" href="departments.html">Serviços</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctors.html">Doctors</a>
+                <a class="nav-link" href="doctors.html">Médicos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+              <li class="nav-item active">
+                <a class="nav-link btn btn-primary text-white px-4 py-2" href="contact.html">Cadastre-se <span class="sr-only">(current)</span></a>
               </li>
               <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
@@ -82,37 +220,43 @@
   </div>
 
   <!-- about section -->
-
   <section class="about_section layout_padding">
-    <div class="container  ">
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
+    <div class="container">
+      <div class="img-box">
+        <img src="images/about-img.jpg" alt="Sobre a Cloudlife">
+      </div>
+      <div class="detail-box">
+        <div class="heading_container">
+          <h2>Sobre a <span>Cloudlife</span></h2>
         </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About <span>Us</span>
-              </h2>
-            </div>
-            <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
-        </div>
+
+        <h4>Soluções Inovadoras em Saúde Digital</h4>
+        <p>A Cloudlife é uma plataforma líder em prontuários eletrônicos unificados e gestão inteligente de saúde. Nosso objetivo é conectar médicos, pacientes e clínicas em um ecossistema digital seguro e eficiente, utilizando tecnologia baseada em nuvem para transformar a experiência de cuidado e administração na área da saúde.</p>
+
+        <h4>Nossa Missão e Visão</h4>
+        <p><strong>Missão:</strong> Empoderar profissionais de saúde com ferramentas tecnológicas avançadas, proporcionar aos pacientes controle total sobre sua jornada médica e oferecer às clínicas soluções de gestão que otimizem tempo e recursos, promovendo uma saúde acessível, integrada e valorizada.</p>
+        <p><strong>Visão:</strong> Tornar-se a principal solução digital de saúde no Brasil e no mundo, liderando a inovação para um futuro onde o cuidado é eficiente, centrado no paciente e universalmente acessível.</p>
+
+        <h4>Histórico e Origem</h4>
+        <p>Fundada em resposta às demandas por digitalização aceleradas pela pandemia de COVID-19, a Cloudlife é uma startup sediada em Recife, Brasil. Combinamos expertise médica e tecnológica para atender às necessidades de um setor em constante evolução, oferecendo soluções que redefinem o padrão de atendimento em saúde.</p>
+
+        <h4>Serviços e Funcionalidades</h4>
+        <ul>
+          <li><i class="fa fa-file-text-o"></i> <strong>Prontuário Digital Unificado:</strong> Armazenamento seguro e acessível de históricos médicos, reduzindo redundâncias e aprimorando a continuidade do atendimento.</li>
+          <li><i class="fa fa-calendar"></i> <strong>Marcação de Consultas:</strong> Sistema integrado de agendamento, simplificando a gestão de consultas para médicos e pacientes.</li>
+          <li><i class="fa fa-building"></i> <strong>Gestão de Clínicas:</strong> Ferramentas avançadas para controle de operações, com relatórios analíticos que impulsionam a eficiência.</li>
+          <li><i class="fa fa-star"></i> <strong>Reputação e Avaliações:</strong> Plataforma de feedback que promove transparência e confiança entre pacientes e profissionais.</li>
+          <li><i class="fa fa-user"></i> <strong>Acesso para Pacientes:</strong> Portal intuitivo para gerenciamento de dados médicos e comunicação segura com profissionais.</li>
+          <li><i class="fa fa-video-camera"></i> <strong>Integração com Telemedicina:</strong> Suporte completo para consultas virtuais, integrado ao prontuário eletrônico.</li>
+        </ul>
+
+        <h4>Tecnologia de Ponta</h4>
+        <p>Nossa infraestrutura em nuvem garante escalabilidade, segurança de dados e acesso remoto, permitindo que a Cloudlife atenda às demandas de um mercado dinâmico com soluções robustas e confiáveis.</p>
+
+        <a href="contact.html" class="btn btn-primary">Fale Conosco</a>
       </div>
     </div>
   </section>
-
   <!-- end about section -->
 
   <!-- footer section -->
@@ -121,120 +265,74 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_contact">
-            <h4>
-              Reach at..
-            </h4>
+            <h4>Contato</h4>
             <div class="contact_link_box">
               <a href="">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
+                <span>Recife, Pernambuco, Brasil</span>
               </a>
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +01 1234567890
-                </span>
+                <span>+55 81 1234-5678</span>
               </a>
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  demo@gmail.com
-                </span>
+                <span>contato@cloudlife.com.br</span>
               </a>
             </div>
           </div>
           <div class="footer_social">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 footer_col">
           <div class="footer_detail">
-            <h4>
-              About
-            </h4>
-            <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
-            </p>
+            <h4>Sobre a Cloudlife</h4>
+            <p>Soluções inovadoras para conectar médicos, pacientes e clínicas em uma plataforma de gestão de saúde digital.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-2 mx-auto footer_col">
           <div class="footer_link_box">
-            <h4>
-              Links
-            </h4>
+            <h4>Links</h4>
             <div class="footer_links">
-              <a class="" href="index.html">
-                Home
-              </a>
-              <a class="active" href="about.html">
-                About
-              </a>
-              <a class="" href="departments.html">
-                Departments
-              </a>
-              <a class="" href="doctors.html">
-                Doctors
-              </a>
-              <a class="" href="contact.html">
-                Contact Us
-              </a>
+              <a href="index.html">Home</a>
+              <a class="active" href="about.html">Sobre Nós</a>
+              <a href="departments.html">Departamentos</a>
+              <a href="doctors.html">Médicos</a>
+              <a href="contact.html">Cadastre-se</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 footer_col ">
-          <h4>
-            Newsletter
-          </h4>
+        <div class="col-md-6 col-lg-3 footer_col">
+          <h4>Agende nossa visita!</h4>
           <form action="#">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
+            <input type="email" placeholder="Seu email" />
+            <button type="submit">Inscrever-se</button>
           </form>
         </div>
       </div>
       <div class="footer-info">
-        <p>
-          &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">ThemeWagon</a>
-        </p>
+        <p>© 2025 Cloudlife Tecnologia em Saúde. Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
+  <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
+  <!-- Popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <!-- Bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
+  <!-- Owl Slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
   <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap" async defer></script>
 </body>
 
 </html>
